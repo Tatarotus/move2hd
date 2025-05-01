@@ -42,3 +42,200 @@
 2025-05-01 16:07:33,895 - INFO - Moving to Videos/FILMES/Animação/moana/Moana.2.2024.FULL.HD.mkv
 2025-05-01 16:07:33,953 - INFO - Processando: [1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
 2025-05-01 16:07:34,913 - INFO - Moving to Videos/SERIES/stranger_things/[1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:30:35,044 - INFO - Processando: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:30:35,046 - INFO - Starting checksum for [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:40:46,779 - INFO - Processando: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:42:54,307 - INFO - Processando: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:42:54,308 - INFO - Calculating source checksum: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:42:54,367 - INFO - Verifying destination checksum: Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:42:54,368 - INFO - Successfully transferred Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:42:54,368 - INFO - Processando: O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:42:54,369 - INFO - Calculating source checksum: O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:42:54,425 - INFO - Verifying destination checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:42:54,427 - INFO - Successfully transferred Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:42:54,427 - INFO - Processando: [Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:42:54,429 - INFO - Calculating source checksum: [Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:42:54,487 - INFO - Verifying destination checksum: Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:42:54,488 - INFO - Successfully transferred Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:42:54,488 - INFO - Processando: [1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:42:54,489 - INFO - Calculating source checksum: [1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:42:54,547 - INFO - Verifying destination checksum: Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:42:54,549 - INFO - Successfully transferred Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:42:54,550 - INFO - Processando: Captain.America.Brave.New.World.mkv
+2025-05-01 16:46:06,503 - INFO - Processando: Captain.America.Brave.New.World.mkv
+2025-05-01 16:49:37,739 - INFO - Processando: Captain.America.Brave.New.World.mkv
+2025-05-01 16:49:38,476 - INFO - Calculating source checksum: Captain.America.Brave.New.World.mkv
+2025-05-01 16:49:38,537 - INFO - Verifying destination checksum: Videos/FILMES/Ação/captain_america_brave_new_world/Captain.America.Brave.New.World.mkv
+2025-05-01 16:49:38,539 - INFO - Successfully transferred Videos/FILMES/Ação/captain_america_brave_new_world/Captain.America.Brave.New.World.mkv
+2025-05-01 16:49:38,541 - INFO - Processando: [Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:49:38,543 - INFO - Calculating source checksum: [Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:49:38,598 - INFO - Verifying destination checksum: Videos/ANIMES/yoru_no_kaze/[Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:49:38,600 - INFO - Successfully transferred Videos/ANIMES/yoru_no_kaze/[Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:49:38,601 - INFO - Processando: [ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:49:38,602 - INFO - Calculating source checksum: [ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:49:38,660 - INFO - Verifying destination checksum: Videos/SERIES/breaking_bad/[ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:49:38,661 - INFO - Successfully transferred Videos/SERIES/breaking_bad/[ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:49:38,661 - INFO - Processando: [HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:49:38,663 - INFO - Calculating source checksum: [HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:49:38,719 - INFO - Verifying destination checksum: Videos/ANIMES/kimi_no_koe/[HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:49:38,721 - INFO - Successfully transferred Videos/ANIMES/kimi_no_koe/[HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:49:38,722 - INFO - Processando: [YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:39,496 - INFO - Calculating source checksum: [YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:39,553 - INFO - Verifying destination checksum: Videos/FILMES/Ficção_científica/dune_part_two/[YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:39,554 - INFO - Successfully transferred Videos/FILMES/Ficção_científica/dune_part_two/[YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:39,555 - INFO - Processando: [ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:49:39,556 - INFO - Calculating source checksum: [ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:49:39,611 - INFO - Verifying destination checksum: Videos/SERIES/the_witcher/[ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:49:39,612 - INFO - Successfully transferred Videos/SERIES/the_witcher/[ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:49:39,613 - INFO - Processando: [AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:49:39,614 - INFO - Calculating source checksum: [AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:49:39,672 - INFO - Verifying destination checksum: Videos/ANIMES/sakura_no_hana/[AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:49:39,673 - INFO - Successfully transferred Videos/ANIMES/sakura_no_hana/[AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:49:39,674 - INFO - Processando: [Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:49:39,675 - INFO - Calculating source checksum: [Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:49:39,730 - INFO - Verifying destination checksum: Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:49:39,732 - INFO - Successfully transferred Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:49:39,732 - INFO - Processando: [Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:49:39,732 - INFO - Calculating source checksum: [Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:49:39,791 - INFO - Verifying destination checksum: Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:49:39,792 - INFO - Successfully transferred Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:49:39,793 - INFO - Processando: [UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:49:39,794 - INFO - Calculating source checksum: [UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:49:39,850 - INFO - Verifying destination checksum: Videos/ANIMES/haru_no_yume/[UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:49:39,851 - INFO - Successfully transferred Videos/ANIMES/haru_no_yume/[UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:49:39,851 - INFO - Processando: [YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:40,581 - INFO - Calculating source checksum: [YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:40,638 - INFO - Verifying destination checksum: Videos/FILMES/Crime/the_batman/[YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:40,639 - INFO - Successfully transferred Videos/FILMES/Crime/the_batman/[YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:40,640 - INFO - Processando: O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:40,641 - INFO - Calculating source checksum: O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:40,696 - INFO - Verifying destination checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:40,697 - INFO - Successfully transferred Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:40,697 - INFO - Processando: Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:49:41,435 - INFO - Calculating source checksum: Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:49:41,491 - INFO - Verifying destination checksum: Videos/FILMES/Documentário/pangolim_a_viagem_de_kulu/Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:49:41,492 - INFO - Successfully transferred Videos/FILMES/Documentário/pangolim_a_viagem_de_kulu/Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:49:41,493 - INFO - Processando: [SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:49:41,494 - INFO - Calculating source checksum: [SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:49:41,547 - INFO - Verifying destination checksum: Videos/ANIMES/seishun_complex__(_)/[SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:49:41,548 - INFO - Successfully transferred Videos/ANIMES/seishun_complex__(_)/[SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:49:41,548 - INFO - Processando: [1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:49:41,549 - INFO - Calculating source checksum: [1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:49:41,601 - INFO - Verifying destination checksum: Videos/SERIES/the_mandalorian/[1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:49:41,603 - INFO - Successfully transferred Videos/SERIES/the_mandalorian/[1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:49:41,604 - INFO - Processando: [YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:42,350 - INFO - Calculating source checksum: [YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:42,408 - INFO - Verifying destination checksum: Videos/FILMES/Ficção_científica/avatar_the_way_of_water/[YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:42,410 - INFO - Successfully transferred Videos/FILMES/Ficção_científica/avatar_the_way_of_water/[YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:49:42,410 - INFO - Processando: Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:49:43,138 - INFO - Calculating source checksum: Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:49:43,199 - INFO - Verifying destination checksum: Videos/FILMES/Animação/moana/Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:49:43,200 - INFO - Successfully transferred Videos/FILMES/Animação/moana/Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:49:43,201 - INFO - Processando: [1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,202 - INFO - Calculating source checksum: [1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,257 - INFO - Verifying destination checksum: Videos/SERIES/stranger_things/[1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,258 - INFO - Successfully transferred Videos/SERIES/stranger_things/[1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,259 - INFO - Processando: [Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:49:43,260 - INFO - Calculating source checksum: Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:49:43,316 - INFO - Verifying destination checksum: Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4]_1.mkv
+2025-05-01 16:49:43,316 - ERROR - Transfer failed: [Errno 2] No such file or directory: 'Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4]_1.mkv'
+2025-05-01 16:49:43,317 - INFO - Processando: O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:43,319 - INFO - Calculating source checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:49:43,375 - INFO - Verifying destination checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM_1.mkv
+2025-05-01 16:49:43,375 - ERROR - Transfer failed: [Errno 2] No such file or directory: 'Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM_1.mkv'
+2025-05-01 16:49:43,376 - INFO - Processando: [1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,377 - INFO - Calculating source checksum: Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:49:43,436 - INFO - Verifying destination checksum: Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x]_1.mkv
+2025-05-01 16:49:43,437 - ERROR - Transfer failed: [Errno 2] No such file or directory: 'Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x]_1.mkv'
+2025-05-01 16:49:43,438 - INFO - Processando: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:49:43,440 - INFO - Calculating source checksum: Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:49:43,495 - INFO - Verifying destination checksum: Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB]_1.mkv
+2025-05-01 16:49:43,495 - ERROR - Transfer failed: [Errno 2] No such file or directory: 'Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB]_1.mkv'
+2025-05-01 16:51:27,846 - INFO - Processando: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:51:27,847 - INFO - Calculating source checksum: [ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:51:27,906 - INFO - Verifying destination checksum: Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:51:27,907 - INFO - Successfully transferred Videos/SERIES/game_of_thrones/[ThePirateBay] Game.of.Thrones.S08E01.1080p.BluRay.x264.AAC-[TPB].mkv
+2025-05-01 16:51:27,907 - INFO - Processando: O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:27,908 - INFO - Calculating source checksum: O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:27,961 - INFO - Verifying destination checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:27,962 - INFO - Successfully transferred Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E02.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:27,964 - INFO - Processando: [Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:51:27,965 - INFO - Calculating source checksum: [Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:51:28,022 - INFO - Verifying destination checksum: Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:51:28,023 - INFO - Successfully transferred Videos/ANIMES/natsu_no_hikari/[Commie] Natsu no Hikari - 06 [BD 720p AAC][U1V2W3X4].mkv
+2025-05-01 16:51:28,024 - INFO - Processando: [1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:28,026 - INFO - Calculating source checksum: [1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:28,079 - INFO - Verifying destination checksum: Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:28,081 - INFO - Successfully transferred Videos/SERIES/the_last_of_us/[1337x] The.Last.of.Us.S01E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:28,082 - INFO - Processando: Captain.America.Brave.New.World.mkv
+2025-05-01 16:51:28,819 - INFO - Calculating source checksum: Captain.America.Brave.New.World.mkv
+2025-05-01 16:51:28,878 - INFO - Verifying destination checksum: Videos/FILMES/Ação/captain_america_brave_new_world/Captain.America.Brave.New.World.mkv
+2025-05-01 16:51:28,880 - INFO - Successfully transferred Videos/FILMES/Ação/captain_america_brave_new_world/Captain.America.Brave.New.World.mkv
+2025-05-01 16:51:28,880 - INFO - Processando: [Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:51:28,883 - INFO - Calculating source checksum: [Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:51:28,938 - INFO - Verifying destination checksum: Videos/ANIMES/yoru_no_kaze/[Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:51:28,940 - INFO - Successfully transferred Videos/ANIMES/yoru_no_kaze/[Erai-raws] Yoru no Kaze - 02 [1080p WEB-DL AVC AAC][MultiSub][E5F6G7H8].mkv
+2025-05-01 16:51:28,941 - INFO - Processando: [ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:51:28,942 - INFO - Calculating source checksum: [ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:51:28,999 - INFO - Verifying destination checksum: Videos/SERIES/breaking_bad/[ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:51:29,001 - INFO - Successfully transferred Videos/SERIES/breaking_bad/[ThePirateBay] Breaking.Bad.S05E01.720p.WEBRip.x265.HEVC.AAC-[TPB].mkv
+2025-05-01 16:51:29,001 - INFO - Processando: [HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:51:29,003 - INFO - Calculating source checksum: [HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:51:29,059 - INFO - Verifying destination checksum: Videos/ANIMES/kimi_no_koe/[HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:51:29,061 - INFO - Successfully transferred Videos/ANIMES/kimi_no_koe/[HorribleSubs] Kimi no Koe - 03 [720p][AAC][E9J0K1L2].mkv
+2025-05-01 16:51:29,062 - INFO - Processando: [YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:29,790 - INFO - Calculating source checksum: [YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:29,848 - INFO - Verifying destination checksum: Videos/FILMES/Ficção_científica/dune_part_two/[YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:29,850 - INFO - Successfully transferred Videos/FILMES/Ficção_científica/dune_part_two/[YTS] Dune.Part.Two.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:29,850 - INFO - Processando: [ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:51:29,851 - INFO - Calculating source checksum: [ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:51:29,907 - INFO - Verifying destination checksum: Videos/SERIES/the_witcher/[ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:51:29,908 - INFO - Successfully transferred Videos/SERIES/the_witcher/[ThePirateBay] The.Witcher.S02E01.1080p.WEB-DL.x264.AAC-[TPB].mkv
+2025-05-01 16:51:29,909 - INFO - Processando: [AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:51:29,910 - INFO - Calculating source checksum: [AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:51:29,968 - INFO - Verifying destination checksum: Videos/ANIMES/sakura_no_hana/[AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:51:29,970 - INFO - Successfully transferred Videos/ANIMES/sakura_no_hana/[AnimeRG] Sakura no Hana - 04 [BD 1080p FLAC][Dual Audio][M3N4O5P6].mkv
+2025-05-01 16:51:29,970 - INFO - Processando: [Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:51:29,971 - INFO - Calculating source checksum: [Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:51:30,028 - INFO - Verifying destination checksum: Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:51:30,029 - INFO - Successfully transferred Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 02 [1080p CR WEB-DL AVC AAC][MultiSub][14D89703].mkv
+2025-05-01 16:51:30,030 - INFO - Processando: [Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:51:30,031 - INFO - Calculating source checksum: [Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:51:30,088 - INFO - Verifying destination checksum: Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:51:30,090 - INFO - Successfully transferred Videos/ANIMES/kanchigai_no_atelier_meister/[Erai-raws] Kanchigai no Atelier Meister - 03 [1080p CR WEB-DL AVC AAC][MultiSub][A27FD393].mkv
+2025-05-01 16:51:30,090 - INFO - Processando: [UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:51:30,092 - INFO - Calculating source checksum: [UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:51:30,149 - INFO - Verifying destination checksum: Videos/ANIMES/haru_no_yume/[UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:51:30,150 - INFO - Successfully transferred Videos/ANIMES/haru_no_yume/[UTW] Haru no Yume - 05 [BDRip 1080p x264 FLAC][Q7R8S9T0].mkv
+2025-05-01 16:51:30,151 - INFO - Processando: [YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:30,877 - INFO - Calculating source checksum: [YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:30,933 - INFO - Verifying destination checksum: Videos/FILMES/Crime/the_batman/[YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:30,934 - INFO - Successfully transferred Videos/FILMES/Crime/the_batman/[YTS] The.Batman.2022.720p.BluRay.x265.HEVC.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:30,934 - INFO - Processando: O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:30,936 - INFO - Calculating source checksum: O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:30,992 - INFO - Verifying destination checksum: Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:30,993 - INFO - Successfully transferred Videos/SERIES/o_ultimo_reino/O.Último.Reino.S01E01.720p.BluRay.6CH.x264.DUAL- WWW.BLUDV.COM.mkv
+2025-05-01 16:51:30,994 - INFO - Processando: Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:51:31,720 - INFO - Calculating source checksum: Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:51:31,779 - INFO - Verifying destination checksum: Videos/FILMES/Documentário/pangolim_a_viagem_de_kulu/Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:51:31,781 - INFO - Successfully transferred Videos/FILMES/Documentário/pangolim_a_viagem_de_kulu/Pangolim_A_Viagem_de_Kulu.mkv
+2025-05-01 16:51:31,782 - INFO - Processando: [SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:51:31,783 - INFO - Calculating source checksum: [SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:51:31,838 - INFO - Verifying destination checksum: Videos/ANIMES/seishun_complex__(_)/[SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:51:31,839 - INFO - Successfully transferred Videos/ANIMES/seishun_complex__(_)/[SubsPlease] Seishun Complex - 01 (1080p) [A1B2C3D4].mkv
+2025-05-01 16:51:31,840 - INFO - Processando: [1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:51:31,841 - INFO - Calculating source checksum: [1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:51:31,898 - INFO - Verifying destination checksum: Videos/SERIES/the_mandalorian/[1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:51:31,899 - INFO - Successfully transferred Videos/SERIES/the_mandalorian/[1337x] The.Mandalorian.S03E01.720p.WEBRip.x265.HEVC.AAC-[1337x].mkv
+2025-05-01 16:51:31,900 - INFO - Processando: [YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:32,629 - INFO - Calculating source checksum: [YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:32,687 - INFO - Verifying destination checksum: Videos/FILMES/Ficção_científica/avatar_the_way_of_water/[YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:32,688 - INFO - Successfully transferred Videos/FILMES/Ficção_científica/avatar_the_way_of_water/[YTS] Avatar.The.Way.of.Water.2022.1080p.BluRay.x264.AAC5.1-[YTS.MX].mkv
+2025-05-01 16:51:32,689 - INFO - Processando: Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:51:33,419 - INFO - Calculating source checksum: Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:51:33,476 - INFO - Verifying destination checksum: Videos/FILMES/Animação/moana/Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:51:33,477 - INFO - Successfully transferred Videos/FILMES/Animação/moana/Moana.2.2024.FULL.HD.mkv
+2025-05-01 16:51:33,478 - INFO - Processando: [1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:33,479 - INFO - Calculating source checksum: [1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:33,535 - INFO - Verifying destination checksum: Videos/SERIES/stranger_things/[1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv
+2025-05-01 16:51:33,536 - INFO - Successfully transferred Videos/SERIES/stranger_things/[1337x] Stranger.Things.S04E01.1080p.WEB-DL.x264.AAC-[1337x].mkv

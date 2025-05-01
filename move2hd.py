@@ -1,10 +1,22 @@
+#!/usr/bin/env python3
+"""
+Media Organizer v2.1 - Optimized for WD Scorpio Blue HDD
+Features:
+- Rsync with checksum verification
+- Adaptive speed control
+- Dual progress bars
+- Anime detection
+- TMDB/Sambanova integration
+"""
+
 import os
 import re
 import shutil
 import requests
-import subprocess
 import logging
 import json
+import hashlib
+import subprocess
 from pathlib import Path
 from time import sleep
 from dotenv import load_dotenv
@@ -15,8 +27,7 @@ from tqdm import tqdm
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 SAMBANOVA_API_KEY = os.getenv("SAMBANOVA_API_KEY")
-if not TMDB_API_KEY or not SAMBANOVA_API_KEY:
-    raise ValueError("API keys not found in .env")
+RSYNC_PATH = os.getenv("RSYNC_PATH", "/usr/bin/rsync")
 
 # Configurable settings
 LANGUAGE = os.getenv("LANGUAGE", "pt-BR")
@@ -27,13 +38,20 @@ DEST_ANIMES = Path(os.getenv("DEST_ANIMES", "./ANIMES"))
 DEST_PENDENTE = Path(os.getenv("DEST_PENDENTE", "./PENDENTES"))
 VALID_EXTENSIONS = set(os.getenv("VALID_EXTENSIONS", ".mp4,.mkv,.avi,.mov,.wmv,.flv").lower().split(","))
 
+
 # API settings
 BASE_URL = "https://api.themoviedb.org/3"
 SAMBANOVA_URL = "https://api.sambanova.ai/v1/chat/completions"
 CALLS = 40
 PERIOD = 10
 
-# Cache and anime settings
+# HDD Performance settings
+CHECKSUM_CHUNK_SIZE = int(os.getenv("CHECKSUM_CHUNK_SIZE", 131072))  # 128KB
+MIN_TRANSFER_SPEED = int(os.getenv("MIN_TRANSFER_SPEED", 5242880))   # 5MB/s
+SPEED_TIMEOUT = int(os.getenv("SPEED_TIMEOUT", 600))                 # 10 minutes
+BWLIMIT = os.getenv("BWLIMIT", "15m")                                # 15MB/s
+
+# Anime detection and cache
 CACHE_FILE = Path("llm_cache.json")
 ANIME_KEYWORDS = [
     "[Erai-raws]", "CR WEB-DL", "MultiSub", "fansub",
@@ -62,7 +80,7 @@ def save_cache(cache):
     CACHE_FILE.write_text(json.dumps(cache))
 
 @sleep_and_retry
-@limits(calls=CALLS, period=PERIOD)
+@limits(calls=40, period=10)
 def buscar_tmdb(titulo, tipo="tv", ano=None):
     endpoint = f"{BASE_URL}/search/{tipo}"
     params = {"api_key": TMDB_API_KEY, "query": titulo, "language": LANGUAGE}
@@ -168,82 +186,106 @@ def sanitizar_nome_pasta(nome):
         sanitized = sanitized.replace(char, replacement)
     return sanitized
 
+def calculate_checksum(file_path):
+    """Calculate SHA-256 checksum with progress"""
+    sha256 = hashlib.sha256()
+    file_size = file_path.stat().st_size
+    
+    with tqdm(total=file_size, unit='B', unit_scale=True, 
+             desc="Checksum", leave=False) as pbar:
+        with file_path.open('rb') as f:
+            while chunk := f.read(CHECKSUM_CHUNK_SIZE):
+                sha256.update(chunk)
+                pbar.update(len(chunk))
+    
+    return sha256.hexdigest()
+
 def mover(arquivo: Path, destino_base: Path, subpasta_nome: str):
     safe_name = sanitizar_nome_pasta(subpasta_nome)
     destino_final = destino_base / safe_name
     destino_final.mkdir(parents=True, exist_ok=True)
-    
+
+    # Generate unique filename
     counter = 1
-    novo_caminho = destino_final / arquivo.name
-    while novo_caminho.exists():
-        novo_nome = f"{arquivo.stem}_{counter}{arquivo.suffix}"
-        novo_caminho = destino_final / novo_nome
+    base_name = arquivo.stem
+    extension = arquivo.suffix
+    while (destino_final / f"{base_name}{extension}").exists():
+        base_name = f"{arquivo.stem}_{counter}"
         counter += 1
     
-    logger.info(f"Moving to {novo_caminho}")
-    print(f"📁 Moving to: {novo_caminho}")
-
-    # Get file size for progress calculation
-    file_size = arquivo.stat().st_size
-    progress_bar = tqdm(
-        total=file_size,
-        unit='B',
-        unit_scale=True,
-        unit_divisor=1024,
-        desc=f"Transferring {arquivo.name[:30]}",
-        leave=False
-    )
-
-    rsync_cmd = [
-        "rsync",
-        "-ah",
-        "--progress",
-        "--info=progress2",
-        "--remove-source-files",
-        "--chmod=777",
-        str(arquivo),
-        str(novo_caminho)
-    ]
-
+    novo_caminho = destino_final / f"{base_name}{extension}"
+    
     try:
-        with subprocess.Popen(
-            rsync_cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            bufsize=1,
-            universal_newlines=True
-        ) as process:
-            for line in iter(process.stdout.readline, ''):
-                # Parse rsync's progress output
-                match = re.search(r'\s+(\d+)%', line)
-                if match:
-                    percentage = int(match.group(1))
-                    bytes_transferred = file_size * percentage // 100
-                    progress_bar.update(bytes_transferred - progress_bar.n)
+        # Pre-transfer checksum
+        logger.info(f"Calculating source checksum: {arquivo}")
+        source_checksum = calculate_checksum(arquivo)
+        
+        # Rsync configuration
+        rsync_cmd = [
+            RSYNC_PATH,
+            "-ah",
+            "--progress",
+            "--info=progress2",
+            f"--bwlimit={BWLIMIT}",
+            "--partial",
+            f"--timeout={SPEED_TIMEOUT}",
+            "--chmod=777",
+            str(arquivo),
+            str(novo_caminho.parent)
+        ]
+
+        # Transfer with progress monitoring
+        file_size = arquivo.stat().st_size
+        with tqdm(total=file_size, unit='B', unit_scale=True,
+                 desc=f"Transferring {arquivo.name[:20]}", leave=False) as pbar:
             
+            process = subprocess.Popen(
+                rsync_cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1
+            )
+            
+            speed_watchdog = 0
+            for line in iter(process.stdout.readline, ''):
+                # Update progress
+                if match := re.search(r'\s+(\d+)%', line):
+                    percentage = int(match.group(1))
+                    current_bytes = file_size * percentage // 100
+                    pbar.update(current_bytes - pbar.n)
+                
+                # Speed monitoring
+                if speed_match := re.search(r'(\d+\.\d+)kB/s', line):
+                    speed = float(speed_match.group(1)) * 1024  # Convert to bytes/s
+                    speed_watchdog = 0 if speed > MIN_TRANSFER_SPEED else speed_watchdog + 1
+                    
+                    if speed_watchdog > 5:
+                        raise subprocess.TimeoutExpired(
+                            rsync_cmd, 
+                            f"Speed below {MIN_TRANSFER_SPEED//1048576}MB/s for 5 intervals"
+                        )
+
             if process.wait() != 0:
                 raise subprocess.CalledProcessError(process.returncode, rsync_cmd)
-            
-    except Exception as e:
-        progress_bar.close()
-        logger.error(f"Transfer failed: {str(e)}")
-        raise
-    finally:
-        progress_bar.close()
 
-def extract_anime_series_name(filename):
-    # Remove anime-specific patterns and episode numbers
-    patterns = [
-        r"-\s*\d+(\s*\[)?",  # Episode numbers like "- 03"
-        r"\s\d{2,3}(?:v\d+)?\s*\[",  # Episode numbers followed by [
-        r"\[.*?\]",  # All bracketed content
-        r"(?:EP|Episode)\s*\d+",  # Explicit episode markers
-        r"\b\d{1,3}\b(?=\s*[^\d])"  # Standalone episode numbers
-    ]
-    for pattern in patterns:
-        filename = re.sub(pattern, "", filename, flags=re.IGNORECASE)
-    return re.sub(r"\s+", " ", filename).strip()
+        # Post-transfer verification
+        logger.info(f"Verifying destination checksum: {novo_caminho}")
+        dest_checksum = calculate_checksum(novo_caminho)
+        
+        if source_checksum != dest_checksum:
+            novo_caminho.unlink()
+            raise ValueError(f"Checksum mismatch: {source_checksum} vs {dest_checksum}")
+        
+        # Finalize transfer
+        arquivo.unlink()
+        logger.info(f"Successfully transferred {novo_caminho}")
+
+    except Exception as e:
+        logger.error(f"Transfer failed: {str(e)}")
+        novo_caminho.unlink(missing_ok=True)
+        shutil.move(str(arquivo), DEST_PENDENTE / arquivo.name)
+        return
 
 def main():
     arquivos = [f for f in SRC_DIR.rglob("*") if f.is_file() and f.suffix.lower() in VALID_EXTENSIONS]
@@ -258,7 +300,8 @@ def main():
         # Anime keyword detection
         if any(kw in filename for kw in ANIME_KEYWORDS):
             print(f"🎌 Anime detectado: {filename}")
-            series_name = extract_anime_series_name(limpar_nome(filename))
+            clean_name = limpar_nome(filename)
+            series_name = re.sub(r"(-\s*\d+|\[.*?\]|\b\d{1,3}\b)", "", clean_name).strip()
             mover(arquivo, DEST_ANIMES, series_name)
             continue
             

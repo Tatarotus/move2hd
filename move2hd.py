@@ -2,6 +2,7 @@ import os
 import re
 import shutil
 import requests
+import subprocess
 import logging
 import json
 from pathlib import Path
@@ -180,8 +181,56 @@ def mover(arquivo: Path, destino_base: Path, subpasta_nome: str):
         counter += 1
     
     logger.info(f"Moving to {novo_caminho}")
-    print(f"📁 Movendo para: {novo_caminho}")
-    shutil.move(str(arquivo), str(novo_caminho))
+    print(f"📁 Moving to: {novo_caminho}")
+
+    # Get file size for progress calculation
+    file_size = arquivo.stat().st_size
+    progress_bar = tqdm(
+        total=file_size,
+        unit='B',
+        unit_scale=True,
+        unit_divisor=1024,
+        desc=f"Transferring {arquivo.name[:30]}",
+        leave=False
+    )
+
+    rsync_cmd = [
+        "rsync",
+        "-ah",
+        "--progress",
+        "--info=progress2",
+        "--remove-source-files",
+        "--chmod=777",
+        str(arquivo),
+        str(novo_caminho)
+    ]
+
+    try:
+        with subprocess.Popen(
+            rsync_cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            universal_newlines=True
+        ) as process:
+            for line in iter(process.stdout.readline, ''):
+                # Parse rsync's progress output
+                match = re.search(r'\s+(\d+)%', line)
+                if match:
+                    percentage = int(match.group(1))
+                    bytes_transferred = file_size * percentage // 100
+                    progress_bar.update(bytes_transferred - progress_bar.n)
+            
+            if process.wait() != 0:
+                raise subprocess.CalledProcessError(process.returncode, rsync_cmd)
+            
+    except Exception as e:
+        progress_bar.close()
+        logger.error(f"Transfer failed: {str(e)}")
+        raise
+    finally:
+        progress_bar.close()
 
 def extract_anime_series_name(filename):
     # Remove anime-specific patterns and episode numbers
